@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Recycle, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 export function Footer() {
   return (
@@ -9,13 +10,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <Recycle className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground">Dessmi Ltd</span>
-                <span className="text-xs text-muted-foreground">Environmental Solutions</span>
-              </div>
+              <img src={logo} alt="Dessmi Ltd Logo" className="h-14 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground">
               Leading waste management solutions in Mombasa, Kenya. Committed to environmental sustainability and community welfare.
